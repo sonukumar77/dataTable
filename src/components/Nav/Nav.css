@@ -1,0 +1,28 @@
+.nav-container {
+  height: 10%;
+  background-color: black;
+  color: yellow;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-right .nav-menu {
+  cursor: pointer;
+}
+
+.nav-right .nav-menu a {
+  cursor: pointer;
+  text-decoration: none;
+  color: yellow;
+}
