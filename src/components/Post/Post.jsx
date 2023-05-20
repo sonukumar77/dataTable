@@ -60,7 +60,10 @@ const Post = () => {
   };
 
   return (
-    <div style={{ overflowX: "auto", margin: "auto" }}>
+    <div
+      style={{ overflowX: "auto", margin: "auto" }}
+      className="post-container"
+    >
       <h1>Posts</h1>
       <div
         className="search-container"
