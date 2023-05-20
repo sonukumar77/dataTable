@@ -60,7 +60,7 @@ const Comment = () => {
   };
 
   return (
-    <div style={{ overflowX: "auto", margin: "auto" }}>
+    <div className="comment-container">
       <h1>Comments</h1>
       <div
         className="search-container"
@@ -124,7 +124,7 @@ const Comment = () => {
                   }`}
                   onClick={() => handlerPagination(idx)}
                 >
-                  {idx + 1}
+                  {idx > 10 ? null : idx + 1}
                 </span>
               );
             })}
