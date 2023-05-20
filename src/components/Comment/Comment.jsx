@@ -60,7 +60,7 @@ const Comment = () => {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "auto", margin: "auto" }}>
       <h1>Comments</h1>
       <div
         className="search-container"
@@ -140,7 +140,7 @@ const Comment = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
