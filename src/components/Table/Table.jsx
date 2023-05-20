@@ -36,7 +36,7 @@ const Table = () => {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "auto", margin: "auto" }}>
       <h1>Users</h1>
       <table id="customers">
         <thead>
@@ -106,7 +106,7 @@ const Table = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
