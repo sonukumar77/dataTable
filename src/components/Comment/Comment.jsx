@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./Comment.css";
-import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BASE_URL } from "../../utils";
 import { commentDataAction } from "../../redux/action";
@@ -57,13 +56,8 @@ const Comment = () => {
   }, [currentPage]);
 
   const handlerPagination = async (pageNo) => {
-    console.log("pageNo", pageNo);
     setCurrentPage(pageNo);
   };
-
-  console.log(comment, input);
-
-  console.log("postReducer", dataReducer);
 
   return (
     <>
