@@ -36,7 +36,10 @@ const Table = () => {
   };
 
   return (
-    <div style={{ overflowX: "auto", margin: "auto" }}>
+    <div
+      style={{ overflowX: "auto", margin: "auto" }}
+      className="table-container"
+    >
       <h1>Users</h1>
       <table id="customers">
         <thead>
