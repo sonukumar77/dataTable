@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./Post.css";
-import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BASE_URL } from "../../utils";
 import { postDataAction } from "../../redux/action";
@@ -57,14 +56,8 @@ const Post = () => {
   }, [currentPage]);
 
   const handlerPagination = async (pageNo) => {
-    console.log("pageNo", pageNo);
     setCurrentPage(pageNo);
   };
-
-  const handleSearch = () => {};
-  console.log(post, input);
-
-  // console.log("dataReducer", dataReducer);
 
   return (
     <>
@@ -74,7 +67,6 @@ const Post = () => {
         onKeyUp={(e) => setInput(e.target.value)}
       >
         <input type="text" />
-        <button onClick={handleSearch}>Search</button>
       </div>
       <table id="customers">
         <thead>
