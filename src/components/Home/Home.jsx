@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="table-container">
       <div style={{ overflowX: "auto" }}>
         <Table />
       </div>
