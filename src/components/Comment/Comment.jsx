@@ -124,7 +124,7 @@ const Comment = () => {
                   }`}
                   onClick={() => handlerPagination(idx)}
                 >
-                  {idx > 10 ? null : idx + 1}
+                  {idx + 1}
                 </span>
               );
             })}
