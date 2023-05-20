@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { BASE_URL } from "../../utils";
 import { useNavigate } from "react-router-dom";
-
-import { Link } from "react-router-dom";
 import "./Table.css";
 
 const Table = () => {
@@ -36,7 +34,6 @@ const Table = () => {
   const handleRoute = (id) => {
     navigate(`/post/${id}`);
   };
-  console.log("data", user, page);
 
   return (
     <>
