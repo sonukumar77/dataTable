@@ -39,7 +39,7 @@ const Comment = () => {
       );
 
       const total = response.headers.get("x-total-count");
-      setTotalComment(total);
+      setTotalComment(parseInt(total));
 
       const data = await response.json();
       if (data) {
