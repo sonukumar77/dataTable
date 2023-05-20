@@ -60,7 +60,7 @@ const Post = () => {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "auto", margin: "auto" }}>
       <h1>Posts</h1>
       <div
         className="search-container"
@@ -136,7 +136,7 @@ const Post = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
