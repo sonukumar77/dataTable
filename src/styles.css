@@ -1,7 +1,7 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  padding: 3rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #customers {
@@ -61,6 +61,14 @@ a {
   text-decoration: none;
 }
 
+.table-container,
+.post-container,
+.comment-container {
+  overflow-x: auto;
+  margin: auto;
+  padding: 2rem;
+}
 .search-container {
   margin: 1rem auto;
+  text-align: center;
 }
